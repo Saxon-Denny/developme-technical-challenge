@@ -6,8 +6,10 @@
     let teamTwo = d.getElementById("team-two");
     let asideSelector = d.getElementById("myList");
     let title = document.getElementById("title");
-    let teamNumber = asideSelector.options[asideSelector.selectedIndex].value;
-    
+    let numberInput = document.getElementById("numberInput");
+
+    let teamNumber =  asideSelector.options[asideSelector.selectedIndex].value;
+    console.log(teamNumber)
     let namesStore = [];
 
     asideSelector.addEventListener("change", () => {
@@ -97,5 +99,18 @@
     function clearList(paramList){
         paramList.textContent = "";
     }
+
+    add.addEventListener("click", () => {
+        if(numberInput.value == ""){
+            alert ('Please Enter a Number to be aded to the list');
+        }else{
+            let option = d.createElement("option");
+            option.textContent = numberInput.value;
+            option.classList.add("list-group-item");
+            numberInput.value = "";
+            numberInput.focus();
+            asideSelector.insertBefore(option, asideSelector.LastElementChild);
+        }
+    });
 
 })(document);
