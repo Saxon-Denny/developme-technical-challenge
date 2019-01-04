@@ -1,15 +1,14 @@
 (d => {
 
-    let random = d.getElementById("random");
+    let random = d.getElementById("btnRandom");
     let list = d.getElementById("list");
     let teamOne = d.getElementById("teamOne");
     let teamTwo = d.getElementById("teamTwo");
-    let asideSelector = d.getElementById("dropDownList");
-    let title = document.getElementById("title");
-    let numberInput = document.getElementById("numberInput");
-
+    let asideSelector = d.getElementById("asideSelector");
+    let title = d.getElementById("changeTitle");
+    let numberInput = d.getElementById("numberInput");
+    let add = d.getElementById("add");
     let teamNumber =  asideSelector.options[asideSelector.selectedIndex].value;
-    console.log(teamNumber)
     let namesStore = [];
 
     asideSelector.addEventListener("change", () => {
