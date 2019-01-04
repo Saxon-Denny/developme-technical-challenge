@@ -2,9 +2,9 @@
 
     let random = d.getElementById("random");
     let list = d.getElementById("list");
-    let teamOne = d.getElementById("team-one");
-    let teamTwo = d.getElementById("team-two");
-    let asideSelector = d.getElementById("myList");
+    let teamOne = d.getElementById("teamOne");
+    let teamTwo = d.getElementById("teamTwo");
+    let asideSelector = d.getElementById("dropDownList");
     let title = document.getElementById("title");
     let numberInput = document.getElementById("numberInput");
 
@@ -89,7 +89,7 @@
         paramStore.forEach(string => {
             let li = d.createElement("li");
             li.textContent = string;
-            li.classList.add("list-group-item");
+            li.classList.add("team-group-item");
             fragment.appendChild(li);
 
         });
@@ -106,10 +106,11 @@
         }else{
             let option = d.createElement("option");
             option.textContent = numberInput.value;
-            option.classList.add("list-group-item");
+            option.classList.add("option-item");
             numberInput.value = "";
             numberInput.focus();
             asideSelector.insertBefore(option, asideSelector.LastElementChild);
+            alert ('Your Number has now been added to the Dropdown List');
         }
     });
 

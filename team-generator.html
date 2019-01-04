@@ -4,12 +4,14 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>test 1</title>
-    <meta name="description" content="test 1"> 
+    <title>SJD Team Generator</title>
+    <meta name="description" content="SJD Team Generator"> 
     <meta name="viewport" content="width=device-width,		initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width,    initial-scale=1.0">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
 
    
     <body class="container">
@@ -17,9 +19,7 @@
             <h1>Team Generator</h1>
         </header>
 
-        <main id="main" class="col-sm-offset-2 col-sm-8">
-
-            <button id="random" class="btn btn-success">Randomise</button>
+            
      <!-- <button id="delete" class="btn btn-success">Delete Last Name</button>-->
 
         
@@ -30,7 +30,7 @@
                     <textarea class="list-group" id="list"></textarea>
                 </div>
 
-                <select id = "myList">
+                <select id = "dropDownList">
                         <option value = "10">5 aside</option>
                         <option value = "14">7 aside</option>
                         <option value = "22">11 aside</option>
@@ -47,11 +47,13 @@
                         <option value = "28">14 aside</option>
                         <option value = "30">15 aside</option>
                         <option value = "0">--------</option>
-                        <option value = "0">Add in More Numbers</option>
+                        <option value = "0">Your X Amount of Players</option>
                       </select>
 
                       <input type= "input" class="numberInputClass" id="numberInput" placeholder=""/>
-                      <button type= "button" class="addBtn" id="add" placeholder="">Add Number</button>
+                      <button type= "button" class="addBtn" id="add" placeholder="">Add to Drop Down</button>
+
+                      <button id="random" class="btn btn-success">Randomise</button>
                    
                      <!---<input type="radio" name="Manuel Number button" value="manuel-button"> </input>
                       <input type="textbox" name="Manuel Number box" value="manuel-box"> Manuel Number Entry</input>-->
@@ -61,12 +63,12 @@
             <div>
                 <div>
                     <input type= "input" class="team-name-one" id="teamOneName" placeholder="Team 1"/>
-                    <ol id="team-one"></ol>
+                    <ol id="teamOne"></ol>
                     
                 </div>
                 <div>
                         <input type= "input" class="team-name-two" id="teamTwoName" placeholder="Team 2"/>
-                    <ol id="team-two"></ol>
+                    <ol id="teamTwo"></ol>
                   
                 </div>
             </div>  
