@@ -8,21 +8,29 @@
     let title = d.getElementById("changeTitle");
     let numberInput = d.getElementById("numberInput");
     let add = d.getElementById("add");
+    let teamOneName = d.getElementById("teamOneName");
+    let teamTwoName = d.getElementById("teamTwoName");
+    let btnTeamNameRandom = d.getElementById("btnTeamNameRandom");
+
     let teamNumber =  asideSelector.options[asideSelector.selectedIndex].value;
     let namesStore = [];
 
     asideSelector.addEventListener("change", () => {
         teamNumber = asideSelector.options[asideSelector.selectedIndex].value;
-        title.innerHTML= 'Please enter ' + teamNumber + ' names';
+        if(Number(teamNumber) === 0){
+            title.innerHTML= 'Select number of players'; 
+        }else{
+        title.innerHTML= 'Enter ' + teamNumber + ' names';
+        }
     });  
 
     function validateNames(names) {
         if(Number(teamNumber) === 0){
-            return 'Please select a valid team number';
+            return 'Select a valid number of players';
         }
 
         if(names.length < Number(teamNumber)) {
-            return 'You must enter ' + teamNumber +  ' names';
+            return 'You are missing '  + (Number(teamNumber) - names.length)  + ' name(s)';
         }
 
         if(names.length > Number(teamNumber)) {
@@ -101,7 +109,7 @@
 
     add.addEventListener("click", () => {
         if(numberInput.value == ""){
-            alert ('Please Enter a Number to be aded to the list');
+            alert ('Enter a number to be added to the list');
         }else{
             let option = d.createElement("option");
             option.textContent = numberInput.value;
@@ -109,8 +117,30 @@
             numberInput.value = "";
             numberInput.focus();
             asideSelector.insertBefore(option, asideSelector.LastElementChild);
-            alert ('Your Number has now been added to the Dropdown List');
-        }
+            alert ('Your number has now been added to the dropdown list');
+        };
     });
+
+    var myShows = ['Man Utd', 'Arsenal', 'Man City', 'Sunderland', 
+    'Barnsley', 'Leeds FC', 'West Ham Utd', 'Bournemouth FC', 'Sheffield Wednesday',
+    'Wrexham Town FC', 'Aston Villa', 'Bristol Rovers', 'Hull FC'];
+    console.log(myShows);
+    btnTeamNameRandom.addEventListener("click", () => {
+    
+        const shuffled = myShows.sort(() => .5 - Math.random());
+        
+        let teamNameOneShuffled = shuffled.slice(0,1);
+        let teamNameOneString = teamNameOneShuffled.toString();
+        teamOneName.value = teamNameOneString;
+
+        let teamNameTwoShuffled = shuffled.slice(1,2);
+        let teamNameTwoString = teamNameTwoShuffled.toString();
+        teamTwoName.value = teamNameTwoString;
+ 
+});
+
+
+
+
 
 })(document);
