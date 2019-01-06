@@ -6,4 +6,4 @@ Open the index.html (found in the root directory) on a browser (chrome, firefox 
 
 This should open the page and you can begin!
 
-note: this has been tested in firefox, safari and chrome but not in IE or Edge.
+note: this has been tested in Firefox, Safari and Chrome but not in IE or Edge.
