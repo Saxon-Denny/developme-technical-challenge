@@ -1,0 +1,489 @@
+.body-container {
+    background-image: url(../assets/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif, Times, serif;
+}
+
+.page-header{
+    padding: 5px 0px 0px 20px;
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+}
+
+.page-title {
+    font-size: 50px;
+    color:  #F8FAFA; 
+}
+
+.link-title {
+    font-size: 20px;
+    color:  rgb(232, 245, 72);  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 0.3fr 0.2fr;
+  }
+ 
+
+.team-one-main{
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    align-self: center;  
+    justify-self: center; 
+    
+} 
+
+.team-one{
+    border-radius: 5px;
+    width: 250px;
+    height: 330px;
+    background-color: rgba(135,184,232, 0.7);
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+}
+
+.team-one-name{
+    background: transparent;
+    border : none;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 5px;
+  
+}
+
+.team-two-main{
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    align-self: center;  
+    justify-self: center; 
+} 
+
+.team-two{
+    border-radius: 5px;
+    width: 250px;
+    height: 330px;
+    background-color: rgba(242,152,152, 0.7);
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+}
+
+.team-two-name{
+    background: transparent;
+    border : none;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.form-group{
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+   
+    justify-self: center; 
+}
+
+.defence-title{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.defence-textarea{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    border : none;
+    text-align: center;
+    width: 98.75%;
+    font-size: 15px;
+    height: 90%;
+    border: none;
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+.midfield-title{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.midfield-textarea{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    border : none;
+    text-align: center;
+    width: 98.75%;
+    font-size: 15px;
+    height: 90%;
+    border: none;
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+.goalkeeper-title{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.goalkeeper-textarea{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    border : none;
+    text-align: center;
+    width: 98.75%;
+    font-size: 15px;
+    height: 90%;
+    border: none;
+    resize: none;
+    width: 300px;
+    height: 60px;
+}
+.attack-title{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.attack-textarea{
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    border : none;
+    text-align: center;
+    width: 98.75%;
+    font-size: 15px;
+    height: 90%;
+    border: none;
+    resize: none;
+    height: 60px;
+}
+.aside-selector{
+    width: 100%;
+}
+.number-input-div{
+    display: inline;
+}
+.number-input{
+    text-align: center;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.add-btn{
+    padding: 7px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.button-grid{
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 4; 
+    justify-self: center;
+    align-self: center;
+}
+
+
+.btn-random{
+   background-color: rgba(232, 245, 72, 0.9);
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.btn-name-random{
+    background-color: rgba(232, 245, 72, 0.9);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+ }
+
+ .instruction{
+    color: white;
+    font-size:10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+    .body-container {
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 50px 1fr 1fr ;
+        grid-template-rows: 75px 1fr 0.2fr 0.75fr;
+    }
+    .team-one-main{
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        grid-row-start: 3; 
+        grid-row-end: 4; 
+    } 
+    .team-two-main{
+        grid-column-start: 4; 
+        grid-column-end: 6; 
+        grid-row-start: 3; 
+        grid-row-end: 4; 
+    }
+    .form-group{
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        grid-row-start: 2; 
+        grid-row-end: 3; 
+    }
+    .goalkeeper-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .defence-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .midfield-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .attack-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .team-one-main{
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        grid-row-start: 4; 
+        grid-row-end: 5; 
+    } 
+    .team-one{
+        width: 250px;
+        height: 330px;
+        margin-top: 0px;
+    }
+    .team-two-main{
+        grid-column-start: 4; 
+        grid-column-end: 6; 
+        grid-row-start: 4; 
+        grid-row-end: 5; 
+    } 
+    .team-two{
+        width: 250px;
+        height: 330px;
+        margin-top: 0px;
+    }
+    .page-header{
+        grid-column-start: 1; 
+        grid-column-end: 6; 
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+    }
+    .page-title {
+        font-size: 40px;
+    }
+    .button-grid{
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        grid-row-start: 3; 
+        grid-row-end: 4; 
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 50px 1fr 1fr ;
+        grid-template-rows: 75px 1fr 0.2fr 0.75fr;
+    }
+    .team-one-main{
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        grid-row-start: 4; 
+        grid-row-end: 5; 
+    } 
+    .team-two-main{
+        grid-column-start: 4; 
+        grid-column-end: 6; 
+        grid-row-start: 4; 
+        grid-row-end: 5; 
+    }
+    .form-group{
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        grid-row-start: 2; 
+        grid-row-end: 3; 
+    }
+    .team-one{
+        width: 180px;
+        height: 330px;
+    }
+    .team-one-name{
+        font-size: 15px;
+    }
+    .team-two-name{
+        font-size: 15px;
+    }
+    .team-two{
+        width: 180px;
+        height: 330px;
+    }
+    .page-header{
+        grid-column-start: 1; 
+        grid-column-end: 6; 
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+    }
+    .page-title {
+        font-size: 30px;
+    }
+    .link-title {
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 1.2fr 0.2fr 0.85fr 0.85fr;
+    }
+    .team-one-main{
+        grid-column-start: 1; 
+        grid-column-end: 2; 
+        grid-row-start: 4; 
+        grid-row-end: 5; 
+    } 
+    .team-two-main{
+        grid-column-start: 1; 
+        grid-column-end: 2; 
+        grid-row-start: 5; 
+        grid-row-end: 6; 
+    }
+    .form-group{
+        grid-column-start: 1; 
+        grid-column-end: 2; 
+        grid-row-start: 2; 
+        grid-row-end: 3; 
+    }
+    .button-grid{
+        grid-column-start: 1; 
+        grid-column-end: 2; 
+        grid-row-start: 3; 
+        grid-row-end: 4; 
+    }
+    .goalkeeper-textarea{
+        width: 300px;
+        height: 60px;
+    }
+    .defence-textarea{
+        width: 300px;
+        height: 60px;
+    }
+    .midfield-textarea{
+        width: 300px;
+        height: 60px;
+    }
+    .attack-textarea{
+        width: 300px;
+        height: 60px;
+    }
+    .team-one{
+        width: 300px;
+        height: 330px;
+    }
+    .team-one-name{
+        font-size: 20px;
+    }
+    .team-two-name{
+        font-size: 20px;
+    }
+    .team-two{
+        width: 250px;
+        height: 330px;
+    }
+    .page-header{
+        grid-column-start: 1; 
+        grid-column-end: 6; 
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+    }
+}
+@media only screen and (max-width: 350px) {
+    
+    .goalkeeper-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .defence-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .midfield-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .attack-textarea{
+        width: 250px;
+        height: 60px;
+    }
+    .team-one{
+        width: 180px;
+        height: 330px;
+    }
+    .team-two{
+        width: 180px;
+        height: 330px;
+    }
+    .team-one-name{
+        font-size: 15px;
+    }
+    .team-two-name{
+        font-size: 15px;
+    }
+    .number-input{
+        margin-left: 0px;
+    }
+    .add-btn{
+        padding: 7px;
+    
+    }
+    
+
+}

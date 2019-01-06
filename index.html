@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SJD Team Generator</title>
+        <meta name="description" content="SJD Team Generator"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="./css/index-main.css">
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    </head>
+
+    <body class="body-container">
+        <main class="container">
+
+            <header class="page-header">
+                <h1 class="page-title">Random Football Team Generator</h1>
+                <a href="./html/attribute.html" class="link-title">Click to Randomise by Attribute</a>
+            </header>
+
+            <section class="form-group">
+                <div class="list-input">
+                    <h3 class="list-title" id="changeTitle">Select number of players</h3>
+                    <textarea type="text" class="list-textarea" id="list"></textarea>
+                </div>
+                <div class="button-grid">
+                    <div class="drop-down-menu">
+                        <select class="aside-selector" id = "asideSelector" placeholder="Enter number of players">
+                            <option value = "0">Select Number of Players</option>
+                            <option value = "10">5 aside</option>
+                            <option value = "14">7 aside</option>
+                            <option value = "22">11 aside</option>
+                            <option value = "0">--------</option>
+                            <option value = "4">2 aside</option>
+                            <option value = "6">3 aside</option>
+                            <option value = "8">4 aside</option>
+                            <option value = "12">6 aside</option>
+                            <option value = "16">8 aside</option>
+                            <option value = "18">9 aside</option>
+                            <option value = "20">10 aside</option>
+                            <option value = "24">12 aside</option>
+                            <option value = "26">13 aside</option>
+                            <option value = "28">14 aside</option>
+                            <option value = "30">15 aside</option>
+                            <option value = "0">--------</option>
+                            <option value = "0">Your X Amount of Players</option>
+                        </select>
+                    </div>
+                    
+                    <div class="number-input-div">
+                        <input type= "input" class="number-input" id="numberInput" placeholder="Enter number of players"/>
+                        <button type= "button" class="add-btn" id="add">Add to dropdown</button>
+                    </div>
+                   
+
+                    <div class="random">
+                        <button class="btn-random" id="btnRandom">Randomise</button>
+                        
+                    </div>
+                    <div class="team-name-random">
+                    <button class="btn-name-random" id="btnTeamNameRandom">Team Name Randomiser</button>
+                    </div>
+                </div>               
+            </section>
+                
+            <div class="team-one-main">
+                <div class="team-one">
+                    <input type= "input" class="team-one-name" id="teamOneName" placeholder="Team 1...(click to Edit)" maxlength="20"/>
+                    
+                    <ol class= "team-one-list" id="teamOne"></ol>
+                </div>
+            </div>
+
+            <div class="team-two-main">
+                <div class="team-two">
+                        <input type= "input" class="team-two-name" id="teamTwoName" placeholder="Team 2...(click to Edit)" maxlength="20"/>
+                    <ol class= "team-two-list" id="teamTwo"></ol>
+                </div> 
+            </div>
+           
+        </main>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
+
