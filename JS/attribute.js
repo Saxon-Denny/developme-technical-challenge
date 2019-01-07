@@ -65,10 +65,10 @@
             for (i = 0; i < goalKeepersArr.length; i++){
                 if ( i % 2 === 0){
                     //if yes push to first local array
-                    teamOneStore.push(goalKeepersArr[i]);
+                    teamOneStore.push('GK: ' + goalKeepersArr[i]);
                 }else{
                     //if no push to second local array
-                    teamTwoStore.push(goalKeepersArr[i]);
+                    teamTwoStore.push('GK: ' + goalKeepersArr[i]);
                 };
             };
          
@@ -99,10 +99,10 @@
                 for (i = 0; i < defenceArr.length; i++){
                     if ( i % 2 === 0){
                         //if yes push to first local array
-                        teamOneStore.push(defenceArr[i]);
+                        teamOneStore.push('DF: ' + defenceArr[i]);
                     }else{
                         //if no push to second local array
-                        teamTwoStore.push(defenceArr[i]);
+                        teamTwoStore.push('DF: ' + defenceArr[i]);
                     };
                 };
 
@@ -133,10 +133,10 @@
                     for (i = 0; i < midfieldArr.length; i++){
                         if ( i % 2 === 0){
                             //if yes push to first local array
-                            teamOneStore.push(midfieldArr[i]);
+                            teamOneStore.push('MF: ' + midfieldArr[i]);
                         }else{
                             //if no push to second local array
-                            teamTwoStore.push(midfieldArr[i]);
+                            teamTwoStore.push('MF: '+ midfieldArr[i]);
                         };
                     };
         
@@ -166,10 +166,10 @@
                         for (i = 0; i < attackArr.length; i++){
                             if ( i % 2 === 0){
                                 //if yes push to first local array
-                                teamOneStore.push(attackArr[i]);
+                                teamOneStore.push('AT: ' + attackArr[i]);
                             }else{
                                 //if no push to second local array
-                                teamTwoStore.push(attackArr[i]);
+                                teamTwoStore.push('AT: ' + attackArr[i]);
                             };
                         };
             
