@@ -1,8 +1,8 @@
 # developme-technical-challange
 
-To start up the project locally, if you do not have a version, pull all the files from the github repo in to a folder on you pc or mac.
+To start up the project locally, if you do not have a version, clone the files from the github repo in to a folder on you pc or mac.
 
-Open the index.html (found in the root directory) on a browser (chrome, firefox etc).
+Open the index.html (found in the root directory) on a browser (chrome, firefox or safari).
 
 This should open the page and you can begin!
 
