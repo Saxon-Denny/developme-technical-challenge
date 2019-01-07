@@ -44,7 +44,7 @@
         //if text box is empty and nothing is pushed to the array
         //alert the user
         if (goalKeepersArr <= 0){
-            alert('enter at least two names in Goal Keepers')
+            alert('Enter at least two names in Goal Keepers')
         }else{
 
             //randomise the array
@@ -78,7 +78,7 @@
             //if text box is empty and nothing is pushed to the array
             //alert the user
             if (defenceArr <= 0){
-                alert('enter at least two names in Defence')
+                alert('Enter at least two names in Defence')
             }else{
         
                 //randomise the array
@@ -112,7 +112,7 @@
                 //if text box is empty and nothing is pushed to the array
                 //alert the user
                 if (midfieldArr <= 0){
-                    alert('enter at least two names in Midfield')
+                    alert('Enter at least two names in Midfield')
                 }else{
 
                     //randomise the array
@@ -146,7 +146,7 @@
                     //if text box is empty and nothing is pushed to the array
                     //alert the user
                     if (attackArr <= 0){
-                        alert('enter at least two names in Attack')
+                        alert('Enter at least two names in Attack')
                     }else{
 
                         //randomise the array
@@ -201,7 +201,7 @@
             //make sure its a string
             li.textContent = string;
             //with a class list of team-group-item
-            li.classList.add("team-group-item");
+            li.classList.add("team-group-item-attribute");
             //append child fragment with li
             fragment.appendChild(li);
 
@@ -216,8 +216,8 @@
 
     //array for list of random teams
     let randomTeams = ['Man Utd', 'Arsenal', 'Man City', 'Sunderland', 
-    'Barnsley', 'Leeds FC', 'West Ham Utd', 'Bournemouth FC', 'Sheffield Wednesday',
-    'Wrexham Town FC', 'Aston Villa', 'Bristol Rovers', 'Hull FC'];
+    'Barnsley', 'Liverpool', 'Leeds FC', 'West Ham Utd', 'Bournemouth FC', 'Sheffield Wednesday',
+    'Wrexham Town FC', 'Aston Villa', 'Bristol Rovers', 'Hull FC',];
 
     //add event listener to button
     btnTeamNameRandom.addEventListener("click", () => {
